@@ -1,0 +1,18 @@
+(((((((Authintication logIn system))))))):
+// no need to menu age or footer page
+...login form with username and password
+// check if it exists in db or not (yes)-->dasboard  /  (no)-->logIn page again
+if (yes)--> create session keeped
++(((((((logOut page)))))
+--------> destroy all sessions
+--------> redirect to logIn page again
+
+
+(((((((Authorization accessControl system))))))):
+before going to index --> create session2
+as any page includes menu so we added code there
+if (not able to log in )-->redirect to log in page again
+
+
+briefly: before watching any menu bar you must have a session2 after log in  to show it
+

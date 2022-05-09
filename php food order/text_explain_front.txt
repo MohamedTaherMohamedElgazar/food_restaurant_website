@@ -1,0 +1,12 @@
+(((((((((((index.php)))))))))))
+=====>  viewing categories + foods from db based on they are featured and active limited to three of them
+
+
+
+
+
+
+
+
+(((((((((((categories.php)))))))))))
+=====>  viewing categories + foods from db based on they are just active NOT limited to any count of them

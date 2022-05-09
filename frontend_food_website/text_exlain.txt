@@ -1,0 +1,72 @@
+//we begin by designing our database on the localhost
+
+1-tbl_admin-->for pwd we chhose to be unicide to be always positive + A.I+primary
+2-tbl_category--> for featured it is displayed on home page && for active it is displayed on categories page itself
+3-tbl_food--> it is related to category table through the id
+4-tbl_order--> status is for recieved || in dilevery 
+
+
+// designing admin panel
+////admin is designed by adminCSS file
+////creating folder for partials 
+creating folder for admin
+
+----- file of index(Home)
+---------> at the beginning we create 3 sections  (menu & footer) from partials folder and in betweeen for main content 
+------------> the section of main_content is a dashboard for 4 boxes(Admin-category-food-order)
+
+----- file of manaage_admin(Admin)
+---------> at the beginning we create 3 sections  (menu & footer) from partials folder and in betweeen for main content
+------------> display all admins added to database + add them + delete them + update them + change their pwd
+------------> for adding admin through btn >> redirect to add_admin created page
+
+(((((((add_admin created page))))))):
+=======form for filling into database
+=======php code for getting the data and insert it into database
+=======and also creating session for adding if successful-->manaage_admin or not-->add_admin
+
+
+
+(((((((delete_admin created Action))))))):
+***send id with url because it is specific as get method***
+=======get the id of required deleted admin from GET method
+=======php code for deleting it from database
+=======and also creating session for deleted if successful-->manaage_admin
+(((((((delete_category created Action))))))):
+======= remember to pass img to url & to be able to delete the image from db
+
+(((((((update_admin created Action))))))):---->full name and user name only not password
+***send id with url because it is specific as get method***
+=======php code for getting them from database
+=======get the id of required updated admin from GET method
+=======form already filled with info from database-->its inputs values+input hidden for getting the id
+=======php code for updating the admin in database-->after submit updating
+
+
+
+
+(((((((change_password created Action))))))):---->
+through a form
+
+
+
+----- file of manaage_categories(category)
+---------> at the beginning we create 3 sections  (menu & footer) from partials folder and in betweeen for main content 
+
+----- file of manaage_food(food)
+---------> at the beginning we create 3 sections  (menu & footer) from partials folder and in betweeen for main content 
+
+----- file of manaage_orders(order)
+---------> at the beginning we create 3 sections  (menu & footer) from partials folder and in betweeen for main content
+
+
+
+
+
+
+
+(((((((((((add_food page))))))))))):
+---->foods are related under the umberella of special category,
+so we should attach both together through id of category and 
+we should display categories from db as options
+all based on active ones
